@@ -1,0 +1,134 @@
+body{
+    background-color: black;
+}
+
+#heading{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+
+#game{
+    height: 500px;
+    width: 360px;
+    /* border: 2px solid red; */
+    margin: 10px auto;
+    background-image: url(bg.png);
+    background-size: contain;
+    overflow: hidden;
+    /* box-shadow: 2px 2px 8px black; */
+}
+#truck{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    width:120px ;
+    text-align: center;
+    /* background-color: white; */
+    animation: moves 2s linear infinite;
+}
+#truck img{
+    height: 100px;
+}
+
+@keyframes moves {
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 501px;
+    }
+}
+#racecar{
+    position: relative;
+    text-align: center;
+    /* background-color: burlywood; */
+    left: 120px;
+    top: 270px;
+    height: 100px;
+    width: 120px;
+    animation: shaking 1.5s linear infinite;
+}
+#racecar img{
+    height: 100px;
+}
+@keyframes shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+   }
+
+#result{
+    height: 250px;
+    width: 300px;
+    /* border: 1px solid red; */
+    box-shadow: 2px 2px 5px black;
+    border-radius: 10px;
+    background-color: cornsilk;
+    text-align: center;
+    margin: 50px auto;
+    padding-top: 20px;
+    display: none;
+}
+#btn{
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    color: aqua;
+    background-color: black;
+}   
+#btn:hover{
+    box-shadow: 1px 1px whitesmoke;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#score{
+    font-size: 30px;
+    font-weight: bold;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+#speed{
+    position: fixed;
+    /* border: 1px solid red; */
+    top: 100px;
+    right: 200px;
+    display: flex;
+    gap: 40px;
+}
+
+h3{
+    position: fixed;
+    font-size: 35px;    /* border: 1px solid red; */
+    top: 0px;
+    right: 300px;
+    display: flex;
+    gap: 40px;
+    color: white;
+}
+
+.level{
+    /* border: 1px solid rebeccapurple; */
+    background-color: aquamarine;
+    text-align: center;
+    font-size: 45px;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+.level:hover{
+    cursor: pointer;
+    /* box-shadow: 1px 1px  whitesmoke;
+     */
+     transform: scale(1.05);
+}
+

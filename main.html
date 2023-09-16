@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racing Game</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1 id="heading">Racing Game</h1>
+    
+    <h2 id="highscore" class="highscore">Highest Score: </h2>
+    <h2 id="yourscore">Your Score: </h2>
+    <h3 id="levelname">Level :</h3>
+    <div id="game">
+        <div id="truck">
+            <img src="truck-8.png" alt="">
+        </div>
+
+        <div id="racecar">
+            <img src="mycar-8.png" alt="">
+        </div>
+    </div><div id="speed">
+        <div id="one" class="level" onclick="main1()">1</div>
+        <div id="two" class="level" onclick="main2()">2</div>
+        <div id="three" class="level" onclick="main3()">3</div>
+    </div>
+
+    <div id="result">
+        <h1>Game Over</h1>
+        <p id="score"></p>
+        <button id="btn" onclick="location.reload()">RESTART</button>
+    </div>
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
